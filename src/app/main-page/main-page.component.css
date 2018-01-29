@@ -1,0 +1,14 @@
+.userInfo {
+    background-color: #474e5d;
+    color: #ffffff;
+    padding-top: 70px;
+      padding-bottom: 70px;
+      padding-left: 70px;
+      padding-right: 70px;
+}
+
+  .listApp {
+    background-color: #1abc9c;
+      color: #ffffff;
+      font-style: italic
+}
