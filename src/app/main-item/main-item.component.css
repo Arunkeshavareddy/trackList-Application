@@ -1,0 +1,40 @@
+.tableList{
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-style: italic
+}
+
+.navbar-brand {
+    color: #ffffff
+}
+
+.tableList form {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.table tr :hover {
+    background-color: lightgray;
+}
+
+.table tr {
+    text-align: center;
+    font-style: italic;
+}
+
+
+table button  {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin-right: 10px ;
+};
+
+table button .deletBtn{
+    background-color: transparent;
+    color: red;
+    border: 0px;
+}
+
+
+

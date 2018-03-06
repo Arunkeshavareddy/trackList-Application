@@ -1,0 +1,24 @@
+<div class="tableList">
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">ListApp</a>
+    </div>
+    
+    <form class="navbar-form ">
+      <div class="form-group">
+        <input type="text" [(ngModel)]="newListName" name="newListName" class="form-control" placeholder="Enter List Name" >
+      </div>
+      <button  class="btn btn-primary" (click)="pushListName()" >Submit</button>
+    </form>
+  </div>
+</nav>
+</div>
+
+<table class="table table-hover table-striped">
+  <tbody>
+    <tr *ngFor= "let name of listName; let ind = index">
+      <td (click)="onSelect(name)" >{{name}} <span (click) = "removeList(name, ind)" class="glyphicon glyphicon-trash"></span></td>
+    </tr>
+  </tbody>
+</table>

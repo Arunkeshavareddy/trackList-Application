@@ -1,0 +1,30 @@
+<div class="tableList">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">{{parmListName}}</a>
+      </div>
+
+      <form class="navbar-form ">
+        <div class="form-group">
+          <input type="text" [(ngModel)]="newItemName" name="newItemName" class="form-control" placeholder="Enter Item Name">
+        </div>
+        <button class="btn btn-primary" (click)="pushItemName()">Submit</button>
+      </form>
+    </div>
+  </nav>
+</div>
+
+<table class="table table-hover table-striped">
+  <tbody>
+    <tr *ngFor="let item of itemName; let ind = index">
+      <td>
+        <input style="cursor:pointer; float:left; position:relative; margin-right:-150px ;" type="checkbox" name=item>
+         {{item}}
+         <input class="itemQty" style="width:50px; float:right; background-color:white" type="number" min="0" max="99">
+         <button type="button" class="btn btn-primary" >Save</button>
+         <button (click)="removeItem(item, ind)" style=" background-color: transparent; color: red; border: 0px;" class="glyphicon glyphicon-trash deletBtn"></button>
+      </td>
+    </tr>
+  </tbody>
+</table>
