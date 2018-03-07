@@ -22,7 +22,10 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
+<<<<<<< HEAD
     "git": "^0.1.5",
+=======
+>>>>>>> 5263fff7e55b088b188c12edca63288af73a9126
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },

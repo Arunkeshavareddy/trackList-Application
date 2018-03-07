@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
+=======
+>>>>>>> 5263fff7e55b088b188c12edca63288af73a9126
 
 @Component({
   selector: 'app-main-table',
@@ -8,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class MainTableComponent implements OnInit {
 
+<<<<<<< HEAD
   listName = [];
 
   newListName = " ";
@@ -29,6 +33,9 @@ export class MainTableComponent implements OnInit {
   }
 
   constructor(private router : Router) { }
+=======
+  constructor() { }
+>>>>>>> 5263fff7e55b088b188c12edca63288af73a9126
 
   ngOnInit() {
   }
